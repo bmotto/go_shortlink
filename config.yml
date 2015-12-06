@@ -1,0 +1,8 @@
+port: 9999
+ip: ""
+datastore:
+  addr: "localhost:6379"
+  password: ""
+  DB: 0
+shortlinkSize: 6
+domainName: "www.stlink.com/"
