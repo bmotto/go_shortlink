@@ -1,6 +1,9 @@
 {
 	"ImportPath": "github.com/bmotto/go_shortlink",
 	"GoVersion": "go1.2.1",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/BurntSushi/toml",
