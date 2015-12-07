@@ -1,5 +1,5 @@
 port: 9999
-ip: ""
+ip: 192.168.1.12
 datastore:
   addr: "localhost:6379"
   password: ""
