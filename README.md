@@ -12,7 +12,11 @@ Pour plus d'information lire: conception/DCD.pdf
 
 Exécuter le make qui est dans le dossier github.com/bmotto/go_shortlink.
 
-3. Cas d'utilisation
+3. Execution
+
+Taper dans une console : go_shortlink
+
+4. Cas d'utilisation
 
 3.1 Shortlink handler
 
@@ -22,11 +26,17 @@ Pour générer un shortlink il y a plusieurs moyens. Pour un url court de type w
  - http://127.0.0.1:9999/shortlink/facebook.com
  - http://127.0.0.1:9999/shortlink/facebook.com&custom=faBo
 
-Pour les url un peu plus long contenant un ou plusieur "/", l'utilisateur doit passer les parametres dans le body de la requête POST, ces arguments doivent ce trouver au format json, example:
+Pour les url un peu plus long contenant un ou plusieurs "/", l'utilisateur doit passer les paramètres dans le body de la requête POST, ces arguments doivent ce trouver au format json, example:
  - {"link":"www.youtube.com/watch?v=RoePjPQP7XE","custom":"millio"}
 
 Par défaut, l'API prend les données transmises dans le json, celui-ci est vide alors l'API prend ceux présents dans l'URL.
 
 3.2 Redirection handler
 
+Si on reprend les exemples si dessus qui on ammené à la création d'un lien court pour l'url facebook.com, il suffit d'utilier faBo pour être redirigé vers facebook.com:
+  - http://127.0.0.1:9999/faBo
+
 3.3 Admin handler
+
+En conservant le même example que précédement, pour connaître les statistiques de redirection du code court faBo, il suffit de taper:
+  - http://127.0.0.1:9999/admin/faBo

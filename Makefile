@@ -19,4 +19,4 @@ build:
 	cd $$GOPATH/ && cp -r ./redis-3.0.5 ./src/github.com/bmotto/go_shortlink/release/redis-3.0.5
 
 	#docker
-	cd $$GOPATH/src/github.com/bmotto/go_shortlinkcd && sudo docker build -t docker_shortlink .
+	cd $$GOPATH/src/github.com/bmotto/go_shortlink && sudo docker build -t docker_shortlink .
