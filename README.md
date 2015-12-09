@@ -6,24 +6,11 @@ Pour plus d'information lire: conception/DCD.pdf
 
  - Installer golang depuis la documentation https://golang.org/
 
- - Installer redis-server et le démarrer depuis http://redis.io/download
-
  - Installer docker engine http://docs.docker.com/engine/installation/
 
 2. Compiler go_shortlink:
 
 Exécuter le make qui est dans le dossier github.com/bmotto/go_shortlink.
-
-( - organisation de l'espace de travail
-  src contient le les fichiers source Go organisés en paquets (un paquet par répertoire),
-  pkg contient les objets binaires des paquets, et
-  bin contient les commandes (des fichiers exécutables).
-
-se placer dans le dossier src/github.com/bmotto/go_shortlink
-  $ go install
-
-exécuter le programme
-  $go_shortlink)
 
 3. Cas d'utilisation
 

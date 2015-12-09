@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
-ADD ./release
-RUN pip install -r requirements.txt
+FROM golang:1.3-onbuild
+ADD ./release /docker
+RUN go get github.com/go-redis/redis
 CMD go_shortlink release/redis-3.0.5/src/redis-cli
