@@ -6,7 +6,8 @@ Pour plus d'information lire: conception/DCD.pdf
 
  - Installer golang depuis la documentation https://golang.org/
 
- - Installer docker engine http://docs.docker.com/engine/installation/
+ - Installer docker engine et docker compose à partir de http://docs.docker.com/engine/installation/ et http://docs.docker.com/compose/install/. Configurer la variable d'environnement DOCKER_HOST
+
 
 2. Compiler go_shortlink:
 
@@ -15,6 +16,8 @@ Exécuter le make qui est dans le dossier github.com/bmotto/go_shortlink.
 3. Execution
 
 Taper dans une console : go_shortlink
+
+Execution depuis docker : sudo docker-compose up
 
 4. Cas d'utilisation
 
