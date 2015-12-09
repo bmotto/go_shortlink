@@ -21,7 +21,7 @@ type shortlink struct {
 	Custom string `json:"custom"`
 }
 
-//ShortlinkHandler short link hanlder
+//ShortlinkHandler short link handler
 func ShortlinkHandler(w http.ResponseWriter, r *http.Request) {
 	logrus.Info("Shortlink handler")
 	var slink datastore.StLink
