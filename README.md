@@ -29,10 +29,10 @@ Pour générer un shortlink il y a plusieurs moyens. Pour un url court de type w
  - http://127.0.0.1:9999/shortlink/facebook.com
  - http://127.0.0.1:9999/shortlink/facebook.com&custom=faBo
 
-Pour les url un peu plus long contenant un ou plusieurs "/", l'utilisateur doit passer les paramètres dans le body de la requête POST, ces arguments doivent ce trouver au format json, example:
+Pour les URL un peu plus longues contenant un ou plusieurs "/", l'utilisateur doit passer les paramètres dans le body de la requête POST, ces arguments doivent ce trouver au format json, example:
  - {"link":"www.youtube.com/watch?v=RoePjPQP7XE","custom":"millio"}
 
-Par défaut, l'API prend les données transmises dans le json, celui-ci est vide alors l'API prend ceux présents dans l'URL.
+Par défaut, l'API prend les données transmises dans le json, si celui-ci est vide alors l'API prend ceux présents dans l'URL.
 
 3.2 Redirection handler
 

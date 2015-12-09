@@ -1,10 +1,11 @@
 docker_shortlink:
   build: .
+  entrypoint: /code
   ports:
    - "5000:5000"
   volumes:
-   - .:/release
+   - .:/code
   links:
    - redis
-github.com/go-redis/redis:
+redis:
   image: redis
